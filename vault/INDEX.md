@@ -16,7 +16,7 @@
 ### 类目：独立站
 | 项目 | 项目位置 | 记忆位置 | 状态 |
 |---|---|---|---|
-| YANXINNA塑身衣 | `C:\Users\Administrator\Desktop\yanxinna-store-feat-homepage-effects` | `20-项目记忆\独立站\YANXINNA塑身衣` | 活跃 |
+| YANXINNA塑身衣 | `E:\Projects\yanxinna-store` | `20-项目记忆\独立站\YANXINNA塑身衣` | 活跃 |
 
 ### 类目：电商作图
 | 项目 | 项目位置 | 记忆位置 | 状态 |
