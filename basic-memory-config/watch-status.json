@@ -1,0 +1,43 @@
+{
+  "running": false,
+  "start_time": "2026-06-19T17:39:45.283485",
+  "pid": 29052,
+  "error_count": 0,
+  "last_error": null,
+  "last_scan": "2026-06-19T18:55:26.230016",
+  "synced_files": 5,
+  "recent_events": [
+    {
+      "timestamp": "2026-06-19T18:55:26.228513",
+      "path": "20-项目记忆/工作室整理总控/项目地图.md",
+      "action": "modified",
+      "status": "success",
+      "checksum": "e1d7c6b4ecf585fbbe9a70a18b1300dae6aa76b863a906e6c1adee4b1a97ea97",
+      "error": null
+    },
+    {
+      "timestamp": "2026-06-19T18:55:26.078450",
+      "path": "20-项目记忆/工作室整理总控/踩坑记录.md",
+      "action": "modified",
+      "status": "success",
+      "checksum": "f7a3cb8a9f51c9321e0edeb3bd4d0d225d8fe18496dac1df21fc97b60bf6ca05",
+      "error": null
+    },
+    {
+      "timestamp": "2026-06-19T18:55:25.959699",
+      "path": "20-项目记忆/工作室整理总控/当前进度.md",
+      "action": "modified",
+      "status": "success",
+      "checksum": "881a5667b3586e3b5bb9b4dbcf448a3e7997e737863e4384fdce69ad253f4d48",
+      "error": null
+    },
+    {
+      "timestamp": "2026-06-19T18:55:25.837158",
+      "path": "20-项目记忆/工作室整理总控/项目地图.md",
+      "action": "new",
+      "status": "success",
+      "checksum": "e1d7c6b4ecf585fbbe9a70a18b1300dae6aa76b863a906e6c1adee4b1a97ea97",
+      "error": null
+    }
+  ]
+}

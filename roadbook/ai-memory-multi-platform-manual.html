@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI 多平台记忆系统手册</title>
+  <style>
+    :root {
+      --ink: #101828;
+      --muted: #667085;
+      --paper: #fffaf0;
+      --cream: #f5efe3;
+      --line: #ddd2bd;
+      --blue: #153e75;
+      --green: #12715b;
+      --gold: #b7791f;
+      --red: #b42318;
+      --shadow: 0 22px 70px rgba(16, 24, 40, .13);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+      background:
+        linear-gradient(rgba(21, 62, 117, .055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(21, 62, 117, .055) 1px, transparent 1px),
+        var(--cream);
+      background-size: 30px 30px;
+      line-height: 1.55;
+    }
+
+    .page {
+      width: min(1180px, calc(100% - 36px));
+      margin: 0 auto;
+      padding: 36px 0 56px;
+    }
+
+    .hero {
+      min-height: 520px;
+      display: grid;
+      align-content: center;
+      gap: 24px;
+      padding: 40px 0 58px;
+    }
+
+    .tag {
+      width: fit-content;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 13px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 250, 240, .82);
+      color: var(--blue);
+      font-weight: 800;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--blue);
+    }
+
+    h1 {
+      max-width: 1060px;
+      margin: 0;
+      font-size: clamp(46px, 7vw, 96px);
+      line-height: .98;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 900px;
+      margin: 0;
+      color: #344054;
+      font-size: 25px;
+      font-weight: 800;
+    }
+
+    .mantra {
+      width: min(920px, 100%);
+      padding: 18px 20px;
+      border: 2px solid var(--ink);
+      border-radius: 8px;
+      background: rgba(255, 250, 240, .94);
+      box-shadow: var(--shadow);
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    section {
+      margin-top: 26px;
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 250, 240, .92);
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: 32px;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 21px;
+      letter-spacing: 0;
+    }
+
+    p { margin: 0; }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      min-height: 180px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    .num {
+      display: inline-grid;
+      place-items: center;
+      min-width: 38px;
+      height: 38px;
+      margin-bottom: 16px;
+      padding: 0 10px;
+      border: 2px solid currentColor;
+      border-radius: 8px;
+      font-weight: 900;
+    }
+
+    .blue { color: var(--blue); }
+    .green { color: var(--green); }
+    .gold { color: var(--gold); }
+    .red { color: var(--red); }
+
+    .path {
+      margin-top: 12px;
+      padding: 12px 13px;
+      border-radius: 8px;
+      background: #efe6d6;
+      color: #253044;
+      font-family: Consolas, "Microsoft YaHei", monospace;
+      overflow-wrap: anywhere;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: 1fr 42px 1fr 42px 1fr;
+      gap: 12px;
+      align-items: stretch;
+    }
+
+    .arrow {
+      display: grid;
+      place-items: center;
+      color: var(--blue);
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    .band {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    .checklist {
+      display: grid;
+      gap: 12px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 46px 1fr;
+      gap: 14px;
+      align-items: start;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    .pill {
+      display: inline-block;
+      margin: 6px 6px 0 0;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f6efe2;
+      color: var(--muted);
+      font-weight: 800;
+    }
+
+    .big-rule {
+      display: grid;
+      place-items: center;
+      min-height: 150px;
+      padding: 24px;
+      border: 2px solid var(--blue);
+      border-radius: 8px;
+      background: #fffdf7;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 900;
+    }
+
+    .footer {
+      margin-top: 32px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 860px) {
+      .hero { min-height: 430px; }
+      .grid-3,
+      .grid-2,
+      .flow {
+        grid-template-columns: 1fr;
+      }
+      .arrow {
+        min-height: 22px;
+        transform: rotate(90deg);
+      }
+      section { padding: 22px; }
+      .lead { font-size: 21px; }
+      .big-rule { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="tag"><span class="dot"></span>Memory Operating Manual</div>
+      <h1>AI 多平台记忆系统</h1>
+      <p class="lead">Codex、Claude Code、VS Code 智能体都只围绕一个记忆中心工作。项目、知识库、素材各放各处，AI 只读入口和状态。</p>
+      <div class="mantra">只同步项目状态入口，不同步聊天记录。</div>
+    </header>
+
+    <section>
+      <h2>一个中心，三类资产</h2>
+      <div class="grid-3">
+        <article class="card">
+          <div class="num blue">1</div>
+          <h3>Basic Memory</h3>
+          <p>路由、进度、踩坑、长期协作规则。它告诉 AI 应该读哪里。</p>
+          <div class="path">E:\AI-Memory\vault</div>
+        </article>
+        <article class="card">
+          <div class="num green">2</div>
+          <h3>项目本体</h3>
+          <p>源码、手册、模板、项目内部知识库、示例和 Git 提交。</p>
+          <div class="path">E:\元提示词agent</div>
+          <div class="path">E:\Projects\sku-image-workbench</div>
+          <div class="path">E:\乐顺科纺程序</div>
+          <div class="path">E:\实时原料看盘</div>
+        </article>
+        <article class="card">
+          <div class="num gold">3</div>
+          <h3>客户素材</h3>
+          <p>图片、参考图、交付图、客户资料。素材不进入总记忆。</p>
+          <div class="path">E:\Studio-Assets\客户名\项目名</div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>项目知识库不要搬进总记忆</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3 class="green">留在项目里</h3>
+          <p>提示词规则、追问规则、类目知识、客户知识、案例沉淀，都属于项目内部知识。</p>
+          <div class="path">E:\元提示词agent\知识库</div>
+        </div>
+        <div class="card">
+          <h3 class="blue">总记忆只记入口</h3>
+          <p>Basic Memory 只记录知识库位置、什么时候更新、下次该先读哪个文件。</p>
+          <div class="path">joe-memory/20-projects/meta-prompt-agent/context</div>
+          <div class="path">joe-memory/20-projects/realtime-material-panel/context</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>完整闭环</h2>
+      <div class="flow">
+        <div class="band">
+          <h3>开工</h3>
+          <p>先读 INDEX，确认项目、范围和边界。</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="band">
+          <h3>执行</h3>
+          <p>只读当前任务需要的项目文件，不扫无关目录。</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="band">
+          <h3>收尾</h3>
+          <p>只把长期有用、会复用、能验证的内容写回三份记忆。</p>
+        </div>
+      </div>
+      <div class="path">项目修改 → Git 提交 → 筛选长期有效内容 → 写入三份记忆 → 重新索引 → 验证 permalink 可读</div>
+    </section>
+
+    <section>
+      <h2>开工三句话</h2>
+      <div class="checklist">
+        <div class="row">
+          <span class="num blue">A</span>
+          <div>
+            <h3>Codex / 支持 MCP</h3>
+            <div class="path">先按 joe-memory/index 做 Memory Check。这次项目是【项目名】。</div>
+          </div>
+        </div>
+        <div class="row">
+          <span class="num green">B</span>
+          <div>
+            <h3>跨平台文件版</h3>
+            <div class="path">先读取 E:\AI-Memory\vault\INDEX.md 做 Memory Check。这次项目是【项目名】。</div>
+          </div>
+        </div>
+        <div class="row">
+          <span class="num gold">C</span>
+          <div>
+            <h3>收尾同步</h3>
+            <div class="path">本轮任务结束，只把长期有用、以后会复用、能验证的内容更新到对应项目三份记忆。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>三份记忆怎么分</h2>
+      <div class="grid-3">
+        <article class="card">
+          <div class="num blue">地图</div>
+          <h3>项目地图.md</h3>
+          <p>项目定位、正式路径、核心资产、长期原则、固定入口。</p>
+          <span class="pill">稳定事实</span>
+          <span class="pill">长期入口</span>
+        </article>
+        <article class="card">
+          <div class="num green">进度</div>
+          <h3>当前进度.md</h3>
+          <p>现在做到哪、最近提交、下一步、阻塞点、当前不做。</p>
+          <span class="pill">当前状态</span>
+          <span class="pill">下一步</span>
+        </article>
+        <article class="card">
+          <div class="num red">坑</div>
+          <h3>踩坑记录.md</h3>
+          <p>失败方案、已知风险、复现条件、规避策略、验证过的修复。</p>
+          <span class="pill">已确认问题</span>
+          <span class="pill">规避策略</span>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>写入判断</h2>
+      <div class="big-rule">长期有用 + 以后会复用 + 能被验证 = 才写入长期记忆</div>
+    </section>
+
+    <section>
+      <h2>回到总控要不要再说</h2>
+      <div class="grid-2">
+        <div class="card">
+          <div class="num green">不用</div>
+          <h3>完整闭环已完成</h3>
+          <p>如果项目对话已经写入三份记忆、重新索引并验证 permalink，可直接结束。总控下次 Memory Check 会读到最新状态。</p>
+          <div class="path">最新状态已经在 E:\AI-Memory\vault</div>
+        </div>
+        <div class="card">
+          <div class="num gold">需要</div>
+          <h3>要核对或总览时</h3>
+          <p>只有想检查写得对不对，或今天多个项目都动过、需要跨项目优先级时，才回到总控说明。</p>
+          <div class="path">不要重复粘贴完整项目过程</div>
+        </div>
+      </div>
+      <div class="grid-3" style="margin-top:16px;">
+        <article class="card">
+          <div class="num blue">项目</div>
+          <h3>项目对话</h3>
+          <p>负责干活、提交 Git、写回三份记忆。</p>
+        </article>
+        <article class="card">
+          <div class="num green">总控</div>
+          <h3>总控对话</h3>
+          <p>负责盘点、核对、跨项目决策。</p>
+        </article>
+        <article class="card">
+          <div class="num gold">记忆</div>
+          <h3>Basic Memory</h3>
+          <p>负责承接所有项目的最新状态。</p>
+        </article>
+      </div>
+      <div class="checklist" style="margin-top:16px;">
+        <div class="row">
+          <span class="num blue">查</span>
+          <div>
+            <h3>核对某个项目</h3>
+            <div class="path">我刚在【项目名】里做了收尾记忆同步，请你只读检查对应三份记忆，看写得对不对，不要改文件。</div>
+          </div>
+        </div>
+        <div class="row">
+          <span class="num green">览</span>
+          <div>
+            <h3>跨项目总览</h3>
+            <div class="path">我今天几个项目都做了记忆同步。请按 joe-memory/index 做 Memory Check，只读各项目当前进度，帮我总结现在每个项目状态和下一步优先级。</div>
+          </div>
+        </div>
+        <div class="row">
+          <span class="num gold">读</span>
+          <div>
+            <h3>不重复汇报</h3>
+            <div class="path">先按 joe-memory/index 做 Memory Check。这次看【项目名】的最新状态。</div>
+          </div>
+        </div>
+        <div class="row">
+          <span class="num red">验</span>
+          <div>
+            <h3>不确定是否同步成功</h3>
+            <div class="path">我不确定【项目名】刚才有没有同步成功。请只读检查对应三份记忆和 Basic Memory permalink，告诉我是否已经是最新，不要改文件。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>其它常用项目命令</h2>
+      <div class="card" style="margin-bottom:16px; border:2px solid var(--blue);">
+        <div class="num blue">重点</div>
+        <h3>元提示词agent</h3>
+        <p>这是电商生图提示词工作流的核心项目，包含系统提示词、规则库、案例沉淀和图片引用自检规则。默认先读记忆，再进项目文件。</p>
+        <div class="grid-2" style="margin-top:16px;">
+          <div class="band">
+            <h3>Codex / MCP 启动</h3>
+            <div class="path">先按 joe-memory/index 做 Memory Check。这次项目是元提示词agent。主项目路径是 E:\元提示词agent。</div>
+          </div>
+          <div class="band">
+            <h3>Claude / VS Code 启动</h3>
+            <div class="path">先读取 E:\AI-Memory\vault\INDEX.md 做 Memory Check。这次项目是元提示词agent。主项目路径是 E:\元提示词agent。请根据 INDEX.md 只读对应项目三份记忆，不要扫描无关项目和客户素材。</div>
+          </div>
+        </div>
+        <div class="grid-3" style="margin-top:16px;">
+          <article class="band">
+            <div class="num blue">图</div>
+            <h3>项目地图</h3>
+            <p>确认项目定位、主目录、知识库入口和长期规则。</p>
+            <div class="path">joe-memory/20-projects/meta-prompt-agent/context</div>
+            <div class="path">E:\AI-Memory\vault\20-项目记忆\元提示词agent\项目地图.md</div>
+          </article>
+          <article class="band">
+            <div class="num green">进</div>
+            <h3>当前进度</h3>
+            <p>确认最近优化、提交状态、下一步维护重点。</p>
+            <div class="path">joe-memory/20-projects/meta-prompt-agent/progress</div>
+            <div class="path">E:\AI-Memory\vault\20-项目记忆\元提示词agent\当前进度.md</div>
+          </article>
+          <article class="band">
+            <div class="num red">坑</div>
+            <h3>踩坑记录</h3>
+            <p>确认多图台账、防幻觉、图片引用自检等风险规则。</p>
+            <div class="path">joe-memory/20-projects/meta-prompt-agent/bugs</div>
+            <div class="path">E:\AI-Memory\vault\20-项目记忆\元提示词agent\踩坑记录.md</div>
+          </article>
+        </div>
+        <div class="checklist" style="margin-top:16px;">
+          <div class="row">
+            <span class="num gold">命</span>
+            <div>
+              <h3>常用命令</h3>
+              <p>用于排查和验证元提示词agent的记忆是否能被 Basic Memory 正确读取。</p>
+              <p style="margin-top:12px;"><strong>指定配置目录：</strong>后续命令都读这套 Basic Memory 配置。</p>
+              <div class="path">$env:BASIC_MEMORY_CONFIG_DIR='E:\AI-Memory\basic-memory-config'</div>
+              <p style="margin-top:12px;"><strong>读项目地图：</strong>确认项目入口和长期规则。</p>
+              <div class="path">uvx basic-memory tool read-note 'joe-memory/20-projects/meta-prompt-agent/context' --project joe-memory --local</div>
+              <p style="margin-top:12px;"><strong>读当前进度：</strong>确认最近优化和下一步。</p>
+              <div class="path">uvx basic-memory tool read-note 'joe-memory/20-projects/meta-prompt-agent/progress' --project joe-memory --local</div>
+              <p style="margin-top:12px;"><strong>读踩坑记录：</strong>确认图片引用、防幻觉和多图规则。</p>
+              <div class="path">uvx basic-memory tool read-note 'joe-memory/20-projects/meta-prompt-agent/bugs' --project joe-memory --local</div>
+              <p style="margin-top:12px;"><strong>搜索项目：</strong>确认索引里能搜到元提示词agent。</p>
+              <div class="path">uvx basic-memory tool search-notes '元提示词agent' --project joe-memory --local</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-2">
+        <article class="card">
+          <div class="num green">SKU</div>
+          <h3>SKU Image Workbench</h3>
+          <p>用于无限智能画布、电商图工具、SKU 图生成和 React/Vite 项目开发。</p>
+          <div class="path">先按 joe-memory/index 做 Memory Check。这次项目是 SKU Image Workbench。主项目路径是 E:\Projects\sku-image-workbench。</div>
+          <div class="path">先读取 E:\AI-Memory\vault\INDEX.md 做 Memory Check。这次项目是 SKU Image Workbench。主项目路径是 E:\Projects\sku-image-workbench。</div>
+          <div class="path">joe-memory/20-projects/sku-image-workbench/context</div>
+          <div class="path">joe-memory/20-projects/sku-image-workbench/progress</div>
+          <div class="path">joe-memory/20-projects/sku-image-workbench/bugs</div>
+          <p style="margin-top:12px;"><strong>命令用途：</strong>读地图看工具定位；读进度看迁移、构建和 Git 状态；读踩坑看工作区和依赖风险。</p>
+          <div class="path">uvx basic-memory tool read-note 'joe-memory/20-projects/sku-image-workbench/context' --project joe-memory --local</div>
+          <div class="path">uvx basic-memory tool read-note 'joe-memory/20-projects/sku-image-workbench/progress' --project joe-memory --local</div>
+          <div class="path">uvx basic-memory tool read-note 'joe-memory/20-projects/sku-image-workbench/bugs' --project joe-memory --local</div>
+          <div class="path">uvx basic-memory tool search-notes 'SKU Image Workbench' --project joe-memory --local</div>
+        </article>
+        <article class="card">
+          <div class="num gold">小程序</div>
+          <h3>微信小程序上线</h3>
+          <p>用于乐顺科纺小程序、上线备案、微信开发者工具、云函数和项目配置。</p>
+          <div class="path">先按 joe-memory/index 做 Memory Check。这次项目是微信小程序上线。主项目路径是 E:\乐顺科纺程序。</div>
+          <div class="path">先读取 E:\AI-Memory\vault\INDEX.md 做 Memory Check。这次项目是微信小程序上线。主项目路径是 E:\乐顺科纺程序。</div>
+          <div class="path">joe-memory/20-projects/wechat-miniprogram/context</div>
+          <div class="path">joe-memory/20-projects/wechat-miniprogram/progress</div>
+          <div class="path">joe-memory/20-projects/wechat-miniprogram/bugs</div>
+          <p style="margin-top:12px;"><strong>命令用途：</strong>读地图看上线入口；读进度看备案前状态；读踩坑看环境、后台暴露和订阅消息风险。</p>
+          <div class="path">uvx basic-memory tool read-note 'joe-memory/20-projects/wechat-miniprogram/context' --project joe-memory --local</div>
+          <div class="path">uvx basic-memory tool read-note 'joe-memory/20-projects/wechat-miniprogram/progress' --project joe-memory --local</div>
+          <div class="path">uvx basic-memory tool read-note 'joe-memory/20-projects/wechat-miniprogram/bugs' --project joe-memory --local</div>
+          <div class="path">uvx basic-memory tool search-notes '微信小程序上线' --project joe-memory --local</div>
+        </article>
+      </div>
+      <div class="row" style="margin-top:16px;">
+        <span class="num red">索引</span>
+        <div>
+          <h3>通用收尾命令</h3>
+          <p>任何项目改完长期记忆后，都可以用这一条重建索引，确保 MCP 和搜索读到最新内容。</p>
+          <div class="path">$env:BASIC_MEMORY_CONFIG_DIR='E:\AI-Memory\basic-memory-config'</div>
+          <div class="path">uvx basic-memory reindex --full --project joe-memory</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>实时原料看盘</h2>
+      <div class="grid-2">
+        <article class="card">
+          <div class="num blue">MCP</div>
+          <h3>Codex 启动</h3>
+          <p>当前平台支持 Basic Memory MCP 时，直接用 permalink 路由。</p>
+          <div class="path">先按 joe-memory/index 做 Memory Check。这次项目是实时原料看盘。主项目路径是 E:\实时原料看盘。</div>
+        </article>
+        <article class="card">
+          <div class="num green">路径</div>
+          <h3>Claude / VS Code 启动</h3>
+          <p>不确定平台是否支持 MCP 时，用本地文件路径版。</p>
+          <div class="path">先读取 E:\AI-Memory\vault\INDEX.md 做 Memory Check。这次项目是实时原料看盘。主项目路径是 E:\实时原料看盘。请根据 INDEX.md 只读对应项目三份记忆，不要扫描无关项目和客户素材。</div>
+        </article>
+      </div>
+      <div class="grid-3" style="margin-top:16px;">
+        <article class="card">
+          <div class="num blue">图</div>
+          <h3>项目地图</h3>
+          <div class="path">joe-memory/20-projects/realtime-material-panel/context</div>
+          <div class="path">E:\AI-Memory\vault\20-项目记忆\实时原料看盘\context.md</div>
+        </article>
+        <article class="card">
+          <div class="num green">进</div>
+          <h3>当前进度</h3>
+          <div class="path">joe-memory/20-projects/realtime-material-panel/progress</div>
+          <div class="path">E:\AI-Memory\vault\20-项目记忆\实时原料看盘\progress.md</div>
+        </article>
+        <article class="card">
+          <div class="num red">坑</div>
+          <h3>踩坑记录</h3>
+          <div class="path">joe-memory/20-projects/realtime-material-panel/bugs</div>
+          <div class="path">E:\AI-Memory\vault\20-项目记忆\实时原料看盘\bugs.md</div>
+        </article>
+      </div>
+      <div class="checklist" style="margin-top:16px;">
+        <div class="row">
+          <span class="num gold">命</span>
+          <div>
+            <h3>常用命令</h3>
+            <p>用于排查和验证 Basic Memory 是否能读到实时原料看盘的最新记忆。</p>
+            <p style="margin-top:12px;"><strong>指定配置目录：</strong>让命令行知道使用哪套 Basic Memory 配置。</p>
+            <div class="path">$env:BASIC_MEMORY_CONFIG_DIR='E:\AI-Memory\basic-memory-config'</div>
+            <p style="margin-top:12px;"><strong>读取项目地图：</strong>确认项目定位、主目录、技术栈、数据源和长期入口。</p>
+            <div class="path">uvx basic-memory tool read-note 'joe-memory/20-projects/realtime-material-panel/context' --project joe-memory --local</div>
+            <p style="margin-top:12px;"><strong>读取当前进度：</strong>确认现在做到哪、下一步是什么、有没有阻塞。</p>
+            <div class="path">uvx basic-memory tool read-note 'joe-memory/20-projects/realtime-material-panel/progress' --project joe-memory --local</div>
+            <p style="margin-top:12px;"><strong>读取踩坑记录：</strong>确认已知问题、风险和规避策略。</p>
+            <div class="path">uvx basic-memory tool read-note 'joe-memory/20-projects/realtime-material-panel/bugs' --project joe-memory --local</div>
+            <p style="margin-top:12px;"><strong>搜索项目记忆：</strong>不确定 permalink 是否正确，或想确认索引能不能搜到时使用。</p>
+            <div class="path">uvx basic-memory tool search-notes '实时原料看盘' --project joe-memory --local</div>
+            <p style="margin-top:12px;"><strong>重建索引：</strong>修改 E:\AI-Memory\vault 里的记忆文件后执行，确保 MCP 和搜索能读到最新内容。</p>
+            <div class="path">uvx basic-memory reindex --full --project joe-memory</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p class="footer">Joe 的 AI 多平台记忆系统手册：E:\AI-Memory\roadbook\ai-memory-multi-platform-manual.html</p>
+  </main>
+</body>
+</html>

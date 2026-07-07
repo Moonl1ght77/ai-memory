@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joe 的电商素材与新项目路书</title>
+  <style>
+    :root {
+      --bg: #f6f2e8;
+      --paper: #fffaf0;
+      --ink: #14213d;
+      --muted: #5b6472;
+      --line: #d8cfbf;
+      --green: #1f8a70;
+      --blue: #2454a6;
+      --red: #b33a3a;
+      --gold: #b7791f;
+      --shadow: 0 18px 50px rgba(20, 33, 61, .12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+      background:
+        linear-gradient(rgba(20, 33, 61, .055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20, 33, 61, .055) 1px, transparent 1px),
+        var(--bg);
+      background-size: 28px 28px;
+      line-height: 1.6;
+    }
+
+    .page {
+      width: min(1180px, calc(100% - 32px));
+      margin: 28px auto 48px;
+    }
+
+    header {
+      min-height: 420px;
+      display: grid;
+      align-content: center;
+      gap: 22px;
+      padding: 44px 0 30px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 10px;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 250, 240, .76);
+      font-weight: 700;
+      color: var(--blue);
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+      background: var(--blue);
+    }
+
+    h1 {
+      max-width: 980px;
+      margin: 0;
+      font-size: clamp(42px, 7vw, 92px);
+      line-height: .98;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 920px;
+      margin: 0;
+      font-size: 24px;
+      font-weight: 700;
+      color: #344052;
+    }
+
+    .quick-copy {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: center;
+      max-width: 920px;
+      padding: 14px 16px;
+      border: 2px solid var(--ink);
+      border-radius: 8px;
+      background: rgba(255, 250, 240, .92);
+      box-shadow: var(--shadow);
+    }
+
+    code {
+      font-family: Consolas, "Microsoft YaHei", monospace;
+      font-size: 16px;
+      color: var(--ink);
+      overflow-wrap: anywhere;
+    }
+
+    button {
+      min-width: 104px;
+      min-height: 44px;
+      border: 0;
+      border-radius: 8px;
+      background: var(--ink);
+      color: white;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    button:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+    }
+
+    section {
+      margin-top: 24px;
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 250, 240, .9);
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: 30px;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+
+    p { margin: 0; }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      min-height: 180px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    .num {
+      display: inline-grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      margin-bottom: 16px;
+      border: 2px solid currentColor;
+      border-radius: 8px;
+      font-weight: 900;
+    }
+
+    .path {
+      margin-top: 12px;
+      padding: 12px;
+      border-radius: 8px;
+      background: #f1eadc;
+      color: #263244;
+      font-family: Consolas, "Microsoft YaHei", monospace;
+      overflow-wrap: anywhere;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: 1fr 44px 1fr 44px 1fr;
+      gap: 12px;
+      align-items: stretch;
+    }
+
+    .arrow {
+      display: grid;
+      place-items: center;
+      font-size: 30px;
+      font-weight: 900;
+      color: var(--blue);
+    }
+
+    .lane {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    .checklist {
+      display: grid;
+      gap: 12px;
+    }
+
+    .check {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 14px;
+      align-items: start;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    .badge {
+      display: inline-grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border: 2px solid var(--blue);
+      border-radius: 8px;
+      color: var(--blue);
+      font-weight: 900;
+    }
+
+    .yes { color: var(--green); }
+    .warn { color: var(--gold); }
+    .no { color: var(--red); }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 16px;
+    }
+
+    .footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 860px) {
+      header { min-height: 360px; }
+      .quick-copy,
+      .grid-3,
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+      .flow {
+        grid-template-columns: 1fr;
+      }
+      .arrow {
+        min-height: 24px;
+        transform: rotate(90deg);
+      }
+      section { padding: 22px; }
+      .lead { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div class="eyebrow"><span class="dot"></span>项目与素材路书</div>
+      <h1>新项目怎么开，电商素材怎么放</h1>
+      <p class="lead">原则：项目放项目，素材放素材，记忆只放路线和结论。AI 不当仓库管理员，只按入口读对内容。</p>
+      <div class="quick-copy">
+        <code id="prompt">先按 joe-memory/index 做 Memory Check，再继续任务。</code>
+        <button type="button" onclick="copyPrompt()">复制启动句</button>
+      </div>
+    </header>
+
+    <section>
+      <h2>一眼看懂：三层分工</h2>
+      <div class="grid-3">
+        <article class="card">
+          <div class="num yes">1</div>
+          <h3>软件项目</h3>
+          <p>放代码、工具、网页、小程序、自动化脚本。每个正式项目尽量独立成目录。</p>
+          <div class="path">E:\Projects\项目名</div>
+        </article>
+        <article class="card">
+          <div class="num warn">2</div>
+          <h3>客户素材</h3>
+          <p>放图片、PSD、参考图、商品资料、最终交付。素材不放进 Basic Memory。</p>
+          <div class="path">E:\Studio-Assets\客户名\项目名</div>
+        </article>
+        <article class="card">
+          <div class="num">3</div>
+          <h3>AI 记忆</h3>
+          <p>只放 AI 该读什么、当前做到哪、踩过什么坑、哪些结论可复用。</p>
+          <div class="path">E:\AI-Memory\vault</div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>开新项目路线</h2>
+      <div class="flow">
+        <div class="lane">
+          <h3>先定类型</h3>
+          <p>这是代码项目、客户电商图项目，还是单纯素材整理？先分清楚，后面才不会乱。</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="lane">
+          <h3>再建入口</h3>
+          <p>代码放 Projects，素材放 Studio-Assets，长期规则放 AI-Memory。</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="lane">
+          <h3>最后让 AI 接手</h3>
+          <p>用启动句让 AI 先读 INDEX，再按任务类型读对应三份记忆。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>电商客户单目录模板</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>建议目录</h3>
+          <div class="path">E:\Studio-Assets\客户名\项目名\01-客户原始素材</div>
+          <div class="path">E:\Studio-Assets\客户名\项目名\02-参考图</div>
+          <div class="path">E:\Studio-Assets\客户名\项目名\03-生成过程</div>
+          <div class="path">E:\Studio-Assets\客户名\项目名\04-最终交付</div>
+          <div class="path">E:\Studio-Assets\客户名\项目名\99-废弃</div>
+        </div>
+        <div class="card">
+          <h3>不要做</h3>
+          <p><strong class="no">不要</strong>把图片、PSD、客户资料塞进 Basic Memory。</p>
+          <p><strong class="no">不要</strong>把客户素材混到代码项目里。</p>
+          <p><strong class="no">不要</strong>让 AI 一次读完整素材仓库。</p>
+          <p><strong class="yes">只让 AI</strong>读取当前任务需要的少量素材和说明。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>新项目记忆模板</h2>
+      <div class="grid-3">
+        <article class="card">
+          <div class="num">A</div>
+          <h3>项目地图.md</h3>
+          <p>稳定结构、技术栈、关键路径、依赖关系、重要决策。</p>
+        </article>
+        <article class="card">
+          <div class="num">B</div>
+          <h3>当前进度.md</h3>
+          <p>现在做到哪、下一步是什么、当前阻塞点、最近验证结果。</p>
+        </article>
+        <article class="card">
+          <div class="num">C</div>
+          <h3>踩坑记录.md</h3>
+          <p>确认过的问题、失败方案、已知风险、规避策略。</p>
+        </article>
+      </div>
+      <div class="path">E:\AI-Memory\vault\20-项目记忆\项目名\项目地图.md</div>
+      <div class="path">E:\AI-Memory\vault\20-项目记忆\项目名\当前进度.md</div>
+      <div class="path">E:\AI-Memory\vault\20-项目记忆\项目名\踩坑记录.md</div>
+    </section>
+
+    <section>
+      <h2>每次收尾前问三句话</h2>
+      <div class="checklist">
+        <div class="check">
+          <span class="badge">1</span>
+          <div><h3>长期有用吗？</h3><p>只对当前一次任务有用的过程，不写进长期记忆。</p></div>
+        </div>
+        <div class="check">
+          <span class="badge">2</span>
+          <div><h3>以后会复用吗？</h3><p>跨项目、跨任务会再次用到的规则、流程、结论，才值得沉淀。</p></div>
+        </div>
+        <div class="check">
+          <span class="badge">3</span>
+          <div><h3>能被验证吗？</h3><p>路径、命令、版本、风险、结果要能重新检查，避免写成模糊印象。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>VS Code / Claude Code / Codex 怎么同步</h2>
+      <div class="flow">
+        <div class="lane">
+          <h3>不要同步聊天记录</h3>
+          <p>聊天记录只是过程，容易又长又乱。真正要同步的是项目状态入口。</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="lane">
+          <h3>统一读同一个入口</h3>
+          <p>不管在哪个 AI 工具里开工，都先让它读取同一套记忆路线。</p>
+          <div class="path">E:\AI-Memory\vault\INDEX.md</div>
+        </div>
+        <div class="arrow">→</div>
+        <div class="lane">
+          <h3>收尾写回三份记忆</h3>
+          <p>只把长期有用、以后会复用、能验证的结论写回项目地图、当前进度、踩坑记录。</p>
+        </div>
+      </div>
+      <div class="grid-3" style="margin-top:16px;">
+        <article class="card">
+          <div class="num">A</div>
+          <h3>所有工具通用</h3>
+          <div class="path">先按 E:\AI-Memory\vault\INDEX.md 做 Memory Check，再继续任务。</div>
+        </article>
+        <article class="card">
+          <div class="num">B</div>
+          <h3>支持 Basic Memory MCP</h3>
+          <div class="path">先按 joe-memory/index 做 Memory Check，再继续任务。</div>
+        </article>
+        <article class="card">
+          <div class="num">C</div>
+          <h3>不支持 MCP</h3>
+          <div class="path">先读取 E:\AI-Memory\vault\INDEX.md，再根据当前任务读取对应项目的 项目地图.md、当前进度.md、踩坑记录.md，然后继续。</div>
+        </article>
+      </div>
+      <div class="path">本轮任务结束。请判断哪些内容长期有用、以后会复用、能被验证；只有三个都是“是”的内容，才更新 E:\AI-Memory\vault 里的对应记忆文件。</div>
+    </section>
+
+    <section>
+      <h2>你可以直接对 AI 说</h2>
+      <div class="path">这是一个新项目，先按 joe-memory/index 做 Memory Check。请帮我建立项目记忆入口，但不要移动素材和代码。</div>
+      <div class="path">这是一个电商图客户项目。请只建立项目入口和素材目录规划，不要把图片素材写进 Basic Memory。</div>
+      <div class="path">本轮任务结束。请判断哪些内容长期有用、以后会复用、能被验证；只有三个都是“是”的内容，才更新 E:\AI-Memory\vault 里的对应记忆文件。</div>
+    </section>
+
+    <p class="footer">Joe 的本地路书：E:\AI-Memory\roadbook\电商与新项目路书.html</p>
+  </main>
+
+  <script>
+    async function copyPrompt() {
+      const text = document.getElementById("prompt").innerText;
+      try {
+        await navigator.clipboard.writeText(text);
+        event.target.innerText = "已复制";
+        setTimeout(() => event.target.innerText = "复制启动句", 1200);
+      } catch {
+        alert(text);
+      }
+    }
+  </script>
+</body>
+</html>

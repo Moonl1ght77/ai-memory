@@ -1,0 +1,11 @@
+# Obsidian 工作区状态（频繁变动，无需版本化）
+vault/.obsidian/workspace.json
+
+# 系统文件
+Thumbs.db
+desktop.ini
+
+# Basic Memory 退役遗留的纯缓存（不入库）
+basic-memory-config/fastembed_cache/
+basic-memory-config/*.log
+90-归档/退役-basic-memory/fastembed_cache/
