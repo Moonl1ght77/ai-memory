@@ -25,6 +25,7 @@
 | 无限智能画布SKU工作台 | `E:\Projects\sku-image-workbench` | `20-项目记忆\电商作图\无限智能画布SKU工作台` | 活跃 |
 | onefitmax | `E:\Projects\onefitmax` | `20-项目记忆\电商作图\onefitmax` | 活跃 |
 | 学习电商作图 | `E:\Projects\学习电商作图` | `20-项目记忆\电商作图\学习电商作图` | 活跃 |
+| agent全自动生图 | `E:\Projects\agent全自动生图` | `20-项目记忆\电商作图\agent全自动生图` | 活跃 |
 
 ### 类目：其他
 | 项目 | 项目位置 | 记忆位置 | 状态 |
