@@ -41,7 +41,7 @@
 | 小红书热点资讯数据流 | `E:\Projects\小红书热点资讯数据流` | `20-项目记忆\AI应用\小红书热点资讯数据流` | 活跃（2026-08-18 新建，需求待 Joe 明确） |
 | 通用AI翻译助手 | `E:\Projects\通用ai翻译助手`（需求文档）；代码仓 `E:\Projects\通用ai翻译助手\universal-ai-translator`（本地 git，暂无远程） | `20-项目记忆\AI应用\通用AI翻译助手` | 活跃（2026-08-26 一次建成 V1：扩展+Widget+WP 插件，自动化验收全绿；等 Joe 真实 Key 联调） |
 | AI员工自动化总控 | `E:\Projects\AI员工自动化总控`（两台机都有：公司机 2026-08-31 由私有仓 `ai-employee-control` 克隆）（模板母版留在 `E:\Projects\矢量绘图平台\docs\claude-config-template\AI员工自动化总控`） | `20-项目记忆\AI应用\AI员工自动化总控` | 活跃（2026-09-09 凌晨：仓新增 `research/patternweaver/` 纯文档 + `.gitignore` research 规则，印花 2.0 设计报告进 `02_交付/`；2026-09-08 凌晨：Codex 外部评估逐条核对，三处真漏 + 一处小漏当天修（下游 `87e90a5` 已推已部署），核对卡在 `03_交接/`；PW bundle 报告并入实地对照卡。真印、备案主体、供应商洽谈仍等 Joe） |
-| 织花云（Saas计费） | `E:\Projects\Saas计费织花云`（公司机，2026-09-14 从私有仓 `Moonl1ght77/Saas-patternweaver` 克隆；家用机路径待核）；线上 http://8.218.99.81/ 香港机，**与印花工作台同 IP 但独立仓、独立部署，服务器连接方式各自单独确认，不互相带入**；仓库自带 `CLAUDE.md` + `.claude/settings.json` 权限规则，开工必读根 `CLAUDE.md` 与 `docs/handoff/README.md` | `20-项目记忆\AI应用\织花云` | 活跃（2026-09-14 公司机接手登记；基线分支 `chore/claude-guardrails` `687a70e`（Joe 定为最新，未推送）；邀请制试运营，正式收款未接入；等 Joe 指定首个功能任务） |
+| 织花云（Saas计费） | `E:\Projects\Saas计费织花云`（公司机，2026-09-14 从私有仓 `Moonl1ght77/Saas-patternweaver` 克隆；家用机路径待核）；线上 http://8.218.99.81/ 香港机，**与印花工作台同 IP 但独立仓、独立部署，服务器连接方式各自单独确认，不互相带入**；仓库自带 `CLAUDE.md` + `.claude/settings.json` 权限规则，开工必读根 `CLAUDE.md` 与 `docs/handoff/README.md` | `20-项目记忆\AI应用\织花云` | 活跃（2026-09-14 公司机接手登记；基线分支 `chore/claude-guardrails` `687a70e`（Joe 定为最新，09-14 已推远程，未并入 main）；邀请制试运营，正式收款未接入；等 Joe 指定首个功能任务） |
 
 ### 类目：其他
 | 项目 | 项目位置 | 记忆位置 | 状态 |
