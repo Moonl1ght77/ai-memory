@@ -46,7 +46,7 @@
 ### 类目：游戏
 | 项目 | 项目位置 | 记忆位置 | 状态 |
 |---|---|---|---|
-| 盲剑卡牌肉鸽 | `E:\Projects\card-roguelike`（私有仓 `Moonl1ght77/card-roguelike`） | `20-项目记忆\游戏\盲剑卡牌肉鸽` | 活跃（2026-10-15 立项：Godot 4.7 + CCGS minimal；7 个任务已拆；story-001 固定战斗、story-002 盲侠机制已关单（2/7 完成；002 代码已推送 058d1a1），下一步 Joe 手输 /dev-story story-003） |
+| 盲剑卡牌肉鸽 | `E:\Projects\card-roguelike`（私有仓 `Moonl1ght77/card-roguelike`） | `20-项目记忆\游戏\盲剑卡牌肉鸽` | 活跃（2026-10-15 立项：Godot 4.7 + CCGS minimal；7 个任务已拆；story-001 固定战斗、story-002 盲侠机制已关单（2/7 完成；main 已推送到 8474e79），下一步 Joe 手输 /dev-story story-003） |
 
 ### 类目：其他
 | 项目 | 项目位置 | 记忆位置 | 状态 |
