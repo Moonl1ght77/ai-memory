@@ -46,7 +46,7 @@
 ### 类目：游戏
 | 项目 | 项目位置 | 记忆位置 | 状态 |
 |---|---|---|---|
-| 盲剑卡牌肉鸽 | `E:\Projects\card-roguelike`（私有仓 `Moonl1ght77/card-roguelike`） | `20-项目记忆\游戏\盲剑卡牌肉鸽` | 活跃（2026-10-15 立项：Godot 4.7 + CCGS minimal；7 个任务已拆；story-001 固定战斗、story-002 盲侠机制、story-003 卡池与战后三选一已关单（3/7 完成；main 已推送到 63883fc）；2026-10-18 story-004 敌人阵容已关单（NOT ASSESSED 照关，4/7 完成；代码 b0bfeb0、关单 67391a2 已推送）；2026-10-18 story-005 一幕地图与节点 /dev-story 完成，代码 169b7f1 已推送；下一步 Joe 手输 /story-done story-005） |
+| 盲剑卡牌肉鸽 | `E:\Projects\card-roguelike`（私有仓 `Moonl1ght77/card-roguelike`） | `20-项目记忆\游戏\盲剑卡牌肉鸽` | 活跃（2026-10-15 立项：Godot 4.7 + CCGS minimal；7 个任务已拆；story-001 固定战斗、story-002 盲侠机制、story-003 卡池与战后三选一已关单（3/7 完成；main 已推送到 63883fc）；2026-10-18 story-004 敌人阵容已关单（NOT ASSESSED 照关，4/7 完成；代码 b0bfeb0、关单 67391a2 已推送）；2026-10-18 story-005 一幕地图与节点 /dev-story 完成，代码 169b7f1 已推送；下一步 Joe 先试玩（桌面「盲剑试玩」）再手输 /story-done story-005） |
 
 ### 类目：其他
 | 项目 | 项目位置 | 记忆位置 | 状态 |
