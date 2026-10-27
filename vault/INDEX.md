@@ -21,7 +21,7 @@
 | YANXINNA塑身衣 | `E:\Projects\yanxinna-store` | `20-项目记忆\独立站\YANXINNA塑身衣` | 活跃（2026-08-03 已正式上线 yanxinna.com；交接推迟，资产暂挂 Joe 名下；服务器 09-02 到期曾停机约 6 天、09-08 已续费复机无数据丢失，新到期日待 Joe 确认） |
 | 周展雄纹身膏独立站 | `E:\Projects\周展雄纹身膏独立站（shopify）`（两台机同路径都有；私有仓 `Moonl1ght77/zzx-ink-shopify`，main = live = `f52b927`（2026-10-12），换机步骤看当前进度「家用机接手」块） | `20-项目记忆\独立站\周展雄纹身膏独立站` | 活跃（**2026-10-11 店铺已公开**：Bogus 已关、店名 TKTX、撤虚构评价；10-12 首页胶囊弹幕区「Good to Know」上线、顶部横幅 UK FREE SHIPPING + 英国标准免运费；TikTok 像素已装（ThreadVibe Wear 账户，数据分享最大化）；International 运费实收仅 $1.53 待商家定；投放前待：**域名 10-26 前续费**、真实 PayPal 付款测试；**10-19 核出英国含利多卡因麻膏属药品，无英国许可不能卖也不能投广告，Joe 自己跟商家处理**；AI 带货视频第一批做护理膏（全 AI + 数字人），方案待批） |
 | 英维尔独立站 | `E:\Projects\英维尔独立站（shopify平台）`（文件夹名留着 shopify 字样，实际已转 Astro 自建；远程仓 `Moonl1ght77/inwell-site`，2026-08-23 建）；3D 视觉片素材工程另放 `E:\Projects\inwell-3d`（Blender，故意在站点仓外，只有成片 mp4 进站点） | `20-项目记忆\独立站\英维尔独立站` | 活跃（**2026-08-30 正式上线 https://inwelltex.com**；2026-08-31 sitemap 上线，08-30 冒烟 5 项待办全清零，无硬阻塞，参展 9-2 交付） |
-| 荣居木业独立站 | `E:\Projects\荣居木业独立站`（本地 git 暂无远程；工作分支 worktree `.claude\worktrees\m1-spike`） | `20-项目记忆\独立站\荣居木业独立站` | 活跃（2026-10-27 立项：B2B 外贸站 + 首页 3D 概念木作展厅，Nuxt + Cloudflare；M0–M3 完成（Nuxt 站点 + 双 RFQ 演示），下一步 M4 Cloudflare（待账号）；客户素材全缺） |
+| 荣居木业独立站 | `E:\Projects\荣居木业独立站`（本地 git 暂无远程；工作分支 worktree `.claude\worktrees\m1-spike`） | `20-项目记忆\独立站\荣居木业独立站` | 活跃（2026-10-27 立项：B2B 外贸站 + 首页 3D 概念木作展厅，Nuxt + Cloudflare；M0–M3 完成，M4 staging 已上线 rongju-demo.liltrick1015.workers.dev（R2 待开通）；客户素材全缺） |
 | Lorenzo | `E:\Projects\lorenzo`（2026-10-26 由空文件夹「富二代独立站（待改名）」改名） | `20-项目记忆\独立站\Lorenzo` | 活跃（2026-10-26 立项：一个商家的外贸 DTC 站，Shopify 零售，羊毛 + 运动两条线；前期按项目 `docs\总任务提示词.md` 分阶段做（Claude Design + Project），商家收款 / 订阅信息暂缓） |
 
 ### 类目：电商作图
