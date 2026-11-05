@@ -55,7 +55,7 @@
 |---|---|---|---|
 | 实时原料看盘 | `E:\实时原料看盘` | `20-项目记忆\其他\实时原料看盘` | 暂停（Joe 2026-08-09 确认停掉；进度停在 2026-06-10） |
 | 工作室整理总控 | （跨项目，无单一目录） | `20-项目记忆\其他\工作室整理总控` | 长期 |
-| 巡航永恒（ETERNAL CRUISE） | `E:\Projects\eternal-cruise`（家用机 2026-11-04 建，暂无仓库） | `20-项目记忆\其他\巡航永恒` | 活跃（2026-11-04 立项：哈雷爱好者站，兼 Joe 设计作品集；走参考原型，brief https://claude.ai/artifact/M8isMKYYGcWfnc2NLrcSG3 ；11-05 方向定黑白电影，11 个参考站拆完（记忆目录 `参考拆解\README.md`），等 Joe 说想法、定组合方案再出样板） |
+| 巡航永恒（ETERNAL CRUISE） | `E:\Projects\eternal-cruise`（家用机 2026-11-04 建，暂无仓库） | `20-项目记忆\其他\巡航永恒` | 活跃（2026-11-04 立项：哈雷爱好者站，兼 Joe 设计作品集；走参考原型，brief https://claude.ai/artifact/M8isMKYYGcWfnc2NLrcSG3 ；11-05 方向定黑白电影，11 个参考站拆完（记忆目录 `参考拆解\README.md`）；11-05 样板 v1（车型选片台）已发 https://claude.ai/artifact/3Dk1p5TPoPbhYtU8B8CxKK ，等 Joe 确认配色、字体、组件） |
 | 黄金CRM（暂名） | `E:\Projects\黄金CRM` | `20-项目记忆\其他\黄金CRM` | 活跃（2026-10-11 全公司 CRM+ERP 点击原型做到第 2 批后搁置，分支 `claude/clickable-prototype`；Joe 先理清需求，需求理清前不给商家看虚拟演示，讲思路用项目仓 `docs/设计思路-讲解版.md`；类目暂归其他） |
 
 每个项目固定三份记忆：
