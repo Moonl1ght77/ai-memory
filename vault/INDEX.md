@@ -18,12 +18,12 @@
 ### 类目：独立站
 | 项目 | 项目位置 | 记忆位置 | 状态 |
 |---|---|---|---|
-| YANXINNA塑身衣 | `E:\Projects\yanxinna-store` | `20-项目记忆\独立站\YANXINNA塑身衣` | 活跃（**2026-11-09 curl：yanxinna.com 现由 Shopify 提供，与记忆的 Next.js + WordPress 不符，待 Joe 确认**；2026-08-03 已正式上线 yanxinna.com；交接推迟，资产暂挂 Joe 名下；服务器 09-02 到期曾停机约 6 天、09-08 已续费复机无数据丢失，新到期日待 Joe 确认） |
+| YANXINNA塑身衣 | `E:\Projects\yanxinna-store` | `20-项目记忆\独立站\YANXINNA塑身衣` | 活跃（**2026-11-09 curl：yanxinna.com 现由 Shopify 提供，与记忆的 Next.js + WordPress 不符；Joe 同日说「YANXINNA不要了」（主站案例语境），项目状态待他确认**；2026-08-03 已正式上线 yanxinna.com；交接推迟，资产暂挂 Joe 名下；服务器 09-02 到期曾停机约 6 天、09-08 已续费复机无数据丢失，新到期日待 Joe 确认） |
 | 周展雄纹身膏独立站 | `E:\Projects\周展雄纹身膏独立站（shopify）`（两台机同路径都有；私有仓 `Moonl1ght77/zzx-ink-shopify`，main = live = `f52b927`（2026-10-12），换机步骤看当前进度「家用机接手」块） | `20-项目记忆\独立站\周展雄纹身膏独立站` | 活跃（**2026-10-11 店铺已公开**：Bogus 已关、店名 TKTX、撤虚构评价；10-12 首页胶囊弹幕区「Good to Know」上线、顶部横幅 UK FREE SHIPPING + 英国标准免运费；TikTok 像素已装（ThreadVibe Wear 账户，数据分享最大化）；International 运费实收仅 $1.53 待商家定；投放前待：**域名 10-26 前续费**、真实 PayPal 付款测试；**10-19 核出英国含利多卡因麻膏属药品，无英国许可不能卖也不能投广告，Joe 自己跟商家处理**；AI 带货视频第一批做护理膏（全 AI + 数字人），方案待批） |
 | 英维尔独立站 | `E:\Projects\英维尔独立站（shopify平台）`（文件夹名留着 shopify 字样，实际已转 Astro 自建；远程仓 `Moonl1ght77/inwell-site`，2026-08-23 建）；3D 视觉片素材工程另放 `E:\Projects\inwell-3d`（Blender，故意在站点仓外，只有成片 mp4 进站点） | `20-项目记忆\独立站\英维尔独立站` | 活跃（**2026-08-30 正式上线 https://inwelltex.com**；2026-08-31 sitemap 上线，08-30 冒烟 5 项待办全清零，无硬阻塞，参展 9-2 交付） |
 | 荣居木业独立站 | `E:\Projects\荣居木业独立站`（私有仓 `Moonl1ght77/rongju-web`，2026-10-27 挂上；工作分支 worktree `.claude\worktrees\m1-spike` = `worktree-m1-spike` `e44b252` 已推，`main` `4a61d61` 已推） | `20-项目记忆\独立站\荣居木业独立站` | 活跃（2026-10-27 立项：B2B 外贸站 + 首页 3D 概念木作展厅，Nuxt + Cloudflare；M0–M3 完成，M4 staging 已上线 rongju-demo.liltrick1015.workers.dev（R2 待开通）；客户素材全缺） |
 | Lorenzo | `E:\Projects\lorenzo`（2026-10-26 由空文件夹「富二代独立站（待改名）」改名） | `20-项目记忆\独立站\Lorenzo` | 活跃（2026-10-26 立项：一个商家的外贸 DTC 站，Shopify 零售，羊毛 + 运动两条线；前期按项目 `docs\总任务提示词.md` 分阶段做（Claude Design + Project），商家收款 / 订阅信息暂缓） |
-| 承泓数字主站 | `E:\Projects\chenghong-site`（公司机 2026-11-08 建；私有仓 `Moonl1ght77/chenghong-site`，家用机 clone 同路径） | `20-项目记忆\独立站\承泓数字主站` | 活跃（2026-11-08 立项：广州承泓数字科技有限公司主站，能力平台型；两线并行：Awwwards 研习 8–10 站 + 主站策略 6 项；API Token = 大模型转售，11-08 合规核验后 Joe 定搁置；11-09 线 A 研习完成（10 站 + 汇总 + 审美清单 + 私有页）；11-09 线 B 策略 6 项草案完成（项目仓 `f718b23`），11-09 Joe 定默认栈 Astro + Workers、不公开价格（品牌化定制、先沟通），询盘发邮箱；11-09 加 07 SEO/GEO/FDE 入门；YANXINNA 站现为 Shopify 待 Joe 确认；下一步补素材后走参考原型出样板） |
+| 承泓数字主站 | `E:\Projects\chenghong-site`（公司机 2026-11-08 建；私有仓 `Moonl1ght77/chenghong-site`，家用机 clone 同路径） | `20-项目记忆\独立站\承泓数字主站` | 活跃（2026-11-08 立项：广州承泓数字科技有限公司主站，能力平台型；两线并行：Awwwards 研习 8–10 站 + 主站策略 6 项；API Token = 大模型转售，11-08 合规核验后 Joe 定搁置；11-09 线 A 研习完成（10 站 + 汇总 + 审美清单 + 私有页）；11-09 线 B 策略 6 项草案完成（项目仓 `f718b23`），11-09 Joe 定默认栈 Astro + Workers、不公开价格（品牌化定制、先沟通），询盘发邮箱；11-09 业务平铺五线（加 SEO/GEO、内容运营，只讲做法），面料做主案例，YANXINNA 不再引用；下一步补素材后走参考原型出样板） |
 
 ### 类目：电商作图
 | 项目 | 项目位置 | 记忆位置 | 状态 |
