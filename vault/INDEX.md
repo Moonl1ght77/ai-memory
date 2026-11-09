@@ -23,7 +23,7 @@
 | 英维尔独立站 | `E:\Projects\英维尔独立站（shopify平台）`（文件夹名留着 shopify 字样，实际已转 Astro 自建；远程仓 `Moonl1ght77/inwell-site`，2026-08-23 建）；3D 视觉片素材工程另放 `E:\Projects\inwell-3d`（Blender，故意在站点仓外，只有成片 mp4 进站点） | `20-项目记忆\独立站\英维尔独立站` | 活跃（**2026-08-30 正式上线 https://inwelltex.com**；2026-08-31 sitemap 上线，08-30 冒烟 5 项待办全清零，无硬阻塞，参展 9-2 交付） |
 | 荣居木业独立站 | `E:\Projects\荣居木业独立站`（私有仓 `Moonl1ght77/rongju-web`，2026-10-27 挂上；工作分支 worktree `.claude\worktrees\m1-spike` = `worktree-m1-spike` `e44b252` 已推，`main` `4a61d61` 已推） | `20-项目记忆\独立站\荣居木业独立站` | 活跃（2026-10-27 立项：B2B 外贸站 + 首页 3D 概念木作展厅，Nuxt + Cloudflare；M0–M3 完成，M4 staging 已上线 rongju-demo.liltrick1015.workers.dev（R2 待开通）；客户素材全缺） |
 | Lorenzo | `E:\Projects\lorenzo`（2026-10-26 由空文件夹「富二代独立站（待改名）」改名） | `20-项目记忆\独立站\Lorenzo` | 活跃（2026-10-26 立项：一个商家的外贸 DTC 站，Shopify 零售，羊毛 + 运动两条线；前期按项目 `docs\总任务提示词.md` 分阶段做（Claude Design + Project），商家收款 / 订阅信息暂缓） |
-| 承泓数字主站 | `E:\Projects\chenghong-site`（公司机 2026-11-08 建；私有仓 `Moonl1ght77/chenghong-site`，家用机 clone 同路径） | `20-项目记忆\独立站\承泓数字主站` | 活跃（2026-11-08 立项：广州承泓数字科技有限公司主站，能力平台型；两线并行：Awwwards 研习 8–10 站 + 主站策略 6 项；API Token = 大模型转售，11-08 合规核验后 Joe 定搁置；11-09 线 A 研习完成（10 站 + 汇总 + 审美清单 + 私有页）；11-09 线 B 策略 6 项草案完成（项目仓 `f718b23`），等 Joe 审并定默认栈、价格区间等待定项） |
+| 承泓数字主站 | `E:\Projects\chenghong-site`（公司机 2026-11-08 建；私有仓 `Moonl1ght77/chenghong-site`，家用机 clone 同路径） | `20-项目记忆\独立站\承泓数字主站` | 活跃（2026-11-08 立项：广州承泓数字科技有限公司主站，能力平台型；两线并行：Awwwards 研习 8–10 站 + 主站策略 6 项；API Token = 大模型转售，11-08 合规核验后 Joe 定搁置；11-09 线 A 研习完成（10 站 + 汇总 + 审美清单 + 私有页）；11-09 线 B 策略 6 项草案完成（项目仓 `f718b23`），11-09 Joe 定默认栈 Astro + Workers、不公开价格（品牌化定制、先沟通），剩询盘落点和百度统计两项；下一步补素材后走参考原型出样板） |
 
 ### 类目：电商作图
 | 项目 | 项目位置 | 记忆位置 | 状态 |
