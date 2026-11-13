@@ -24,7 +24,7 @@
 | 荣居木业独立站 | `E:\Projects\荣居木业独立站`（私有仓 `Moonl1ght77/rongju-web`，2026-10-27 挂上；工作分支 worktree `.claude\worktrees\m1-spike` = `worktree-m1-spike` `e44b252` 已推，`main` `4a61d61` 已推） | `20-项目记忆\独立站\荣居木业独立站` | 活跃（2026-10-27 立项：B2B 外贸站 + 首页 3D 概念木作展厅，Nuxt + Cloudflare；M0–M3 完成，M4 staging 已上线 rongju-demo.liltrick1015.workers.dev（R2 待开通）；客户素材全缺） |
 | Lorenzo | `E:\Projects\lorenzo`（2026-10-26 由空文件夹「富二代独立站（待改名）」改名） | `20-项目记忆\独立站\Lorenzo` | 活跃（2026-10-26 立项：一个商家的外贸 DTC 站，Shopify 零售，羊毛 + 运动两条线；前期按项目 `docs\总任务提示词.md` 分阶段做（Claude Design + Project），商家收款 / 订阅信息暂缓） |
 | 承泓数字主站 | `E:\Projects\chenghong-site`（公司机 2026-11-08 建；私有仓 `Moonl1ght77/chenghong-site`，家用机 clone 同路径） | `20-项目记忆\独立站\承泓数字主站` | 活跃（2026-11-08 立项：广州承远数字科技有限公司主站，能力平台型；两线并行：Awwwards 研习 8–10 站 + 主站策略 6 项；API Token = 大模型转售，11-08 合规核验后 Joe 定搁置；11-09 线 A 研习完成（10 站 + 汇总 + 审美清单 + 私有页）；11-09 线 B 策略 6 项草案完成（项目仓 `f718b23`），11-09 Joe 定默认栈 Astro + Workers、不公开价格（品牌化定制、先沟通），询盘发邮箱；11-09 业务平铺五线（加 SEO/GEO、内容运营，只讲做法），面料做主案例，YANXINNA 不再引用；11-09 样板已发私有页（Critic 87 过线），等 Joe 定配色字体组件和缓动；MiSans 网页加载方式待定） |
-| 耶稣陶瓷灯独立站 | `E:\Projects\jesus-lithophane`（公司机 2026-11-13 建；私有仓 `Moonl1ght77/jesus-lithophane`；参考素材在桌面 `耶稣LED夜灯`） | `20-项目记忆\独立站\耶稣陶瓷灯独立站` | 活跃（2026-11-13 立项：英法 DTC 站卖耶稣透光浮雕瓷灯罩；设计与架构方案已出 https://claude.ai/artifact/V35EKwVFbdwN4ok4948u7k ；11-13 Joe 定纯 Shopify（v0 圣诞版 + v1 复活节前完整版），等 Joe 定主体/收款、是否做 v0、品牌名） |
+| 耶稣陶瓷灯独立站 | `E:\Projects\jesus-lithophane`（公司机 2026-11-13 建，家用机同日 clone 同路径；私有仓 `Moonl1ght77/jesus-lithophane`；参考素材只在公司机桌面 `耶稣LED夜灯`） | `20-项目记忆\独立站\耶稣陶瓷灯独立站` | 活跃（2026-11-13 立项：英法 DTC 站卖耶稣透光浮雕瓷灯罩；设计与架构方案已出 https://claude.ai/artifact/V35EKwVFbdwN4ok4948u7k ；11-13 Joe 定纯 Shopify（v0 圣诞版 + v1 复活节前完整版），等 Joe 定主体/收款、是否做 v0、品牌名） |
 
 ### 类目：电商作图
 | 项目 | 项目位置 | 记忆位置 | 状态 |
