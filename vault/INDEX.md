@@ -56,7 +56,7 @@
 | 项目 | 项目位置 | 记忆位置 | 状态 |
 |---|---|---|---|
 | 虚拟产品矩阵 | `E:\Projects\virtual-product-matrix`（家用机 2026-11-11 建，本地 git，暂无远程仓）；八字线站点 Ink Almanac `E:\Projects\ink-almanac`（公司机 11-12 建，八字页首版已做） | `20-项目记忆\出海矩阵\虚拟产品矩阵` | 活跃（2026-11-11 立项：欧美为主的海外虚拟产品矩阵，AI 几天一个小网页产品、全平台撒网、15 天按数据留扔；设计阶段，11-11 Joe 认可设计方向（撒网四层、成本三档、网页先测赢家升 App），待定成本档位 / 首批 / 分工，暂不开做首批；在线文档 https://claude.ai/artifact/FLjky47YemCDCcVycnmKoc ） |
-| 虚拟产品工作台 | `E:\Projects\vp-workbench`（公司机 2026-11-23 建；私有仓 `Moonl1ght77/vp-workbench`） | `20-项目记忆\出海矩阵\虚拟产品工作台` | 活跃（2026-11-23 立项：面向虚拟产品的中文 AI 桌面工作台，Windows，底座 fork t3code；和「虚拟产品矩阵」是两个项目；设计阶段，共识锁定 v2 已确认，三版方案页 https://claude.ai/artifact/N8uq12TtqnmGmmqpgMBGYy 等 Joe 选） |
+| 虚拟产品工作台 | `E:\Projects\vp-workbench`（公司机 2026-11-23 建；私有仓 `Moonl1ght77/vp-workbench`） | `20-项目记忆\出海矩阵\虚拟产品工作台` | 活跃（2026-11-23 立项：面向虚拟产品的中文 AI 桌面工作台，Windows，底座 fork t3code；和「虚拟产品矩阵」是两个项目；11-23 Joe 选方案二硬分叉，三版方案页 https://claude.ai/artifact/N8uq12TtqnmGmmqpgMBGYy ；11-25 切片 0B-1（删减）执行中，进度以当前进度为准） |
 
 ### 类目：其他
 | 项目 | 项目位置 | 记忆位置 | 状态 |
